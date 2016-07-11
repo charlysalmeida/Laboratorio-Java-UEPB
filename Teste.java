@@ -20,6 +20,7 @@ public class Teste {
         
         //criando uma conta
         Conta conta1 = new Conta();
+        Conta conta2 = new Conta();
         conta1.setNumeroConta(1);
         conta1.setLimite(1000);
         conta1.setSaldo(500);
@@ -30,6 +31,8 @@ public class Teste {
         System.out.println("Conta: "+conta1.getNumeroConta());
         System.out.println("Saldo: "+conta1.getSaldo());
         System.out.println("Limite: "+conta1.getLimite());
+        System.out.println("Numero de Contas Criadas: "+Conta.getContador());
+
     }
             
 }

@@ -14,7 +14,14 @@ public class Conta {
     private double saldo;
     private double limite;
     private Cliente titular;
+    static int contador;
 
+    public Conta(){
+        contador+=1;
+    }
+    public static int getContador() {
+        return contador;
+    }
     public int getNumeroConta() {
         return numeroConta;
     }
